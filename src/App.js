@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-// import List from './components/List'
+import List from './components/list'
+// import {useEffect} from "react"
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,21 +21,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <List />
     </div>
+    
   );
 }
-
-//put this back to  list.js
-const List = () => {
-
-    const fetchData = async () => {
-        const response = await fetch("https://rickandmortyapi.com/api/character/")
-        const data = await response.json()
-        // setData(data)
-        return data
-      // console.log('data', data)
-    }
-}
-
 
 export default App;
