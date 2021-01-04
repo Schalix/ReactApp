@@ -22,13 +22,19 @@ const List = () => {
 
     return (
       <div>
-          <h1> List </h1>
+        <header>
+          <h1> Rick and Morty </h1>
+          <h2> Discover the Caracters</h2>
+        </header>
+
+        <main>
           {/* Loop on array for creating list */}
             {data ? data.map((item, index) => {
                       return (
                           <ListItem item={item} key={item.id} />
                       )
-                  }) : <h2>Loading...</h2>}
+            }) : <h2>Loading...</h2>}
+        </main>
       </div>            
     )
 }
