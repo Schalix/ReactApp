@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import ListItem from './ListItem'
+import Image from 'react-bootstrap/Image'
 
 //create List
 const List = () => {
@@ -22,19 +23,29 @@ const List = () => {
 
     return (
       <div>
-        <header>
-          <h1> Rick and Morty </h1>
-          <h2> Discover the Caracters</h2>
-        </header>
-
-        <main>
           {/* Loop on array for creating list */}
             {data ? data.map((item, index) => {
-                      return (
-                          <ListItem item={item} key={item.id} />
+              return (
+                <div>
+                  <ListItem item={item} key={item.id} />
+                </div>
+                 
+                        // <Container>
+                        //   <Row>
+                        //     <Col xs={6} md={4}>
+                             
+                        //     </Col>
+                        //     <Col xs={6} md={4}>
+                        //       <Image src="holder.js/171x180" roundedCircle />
+                        //     </Col>
+                        //     <Col xs={6} md={4}>
+                        //       <Image src="holder.js/171x180" thumbnail />
+                        //     </Col>
+                        //   </Row>
+                        // </Container>
+                          
                       )
             }) : <h2>Loading...</h2>}
-        </main>
       </div>            
     )
 }

@@ -1,19 +1,18 @@
-import React from 'react'
+// import React from 'react'
+import Image from 'react-bootstrap/Image'
 
 const ListItem = ({ item }) => {
 
     const styledDiv = {
-        backgroundColor: 'grey',
-        fontSize: 12
+        backgroundColor: 'azure',
+        // fontSize: 12
     }
 
     return (
         <div style={styledDiv} key={item._id}>
-            <h2>
-                {item.name}
-            </h2>
+            <img src={item.image} alt={item.name} />
+            {/* rounded */}
         </div>
-
     )
 }
 export default ListItem
