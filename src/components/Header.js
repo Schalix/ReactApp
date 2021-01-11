@@ -9,6 +9,8 @@ const Header = () => {
         backgroundColor: 'azure',
         color: 'purple',
     }
+
+    
     
     return (
         <header style={styledDiv}>
