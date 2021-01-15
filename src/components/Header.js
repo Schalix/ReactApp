@@ -19,7 +19,7 @@ const Header = () => {
         <header style={styledDiv}>
           <h1>Rick and Morty</h1>
           <h2> Discover the Caracters</h2>
-          /* <button
+          <button
                         onMouseEnter={() => setIsShown(true)}
                         onMouseLeave={() => setIsShown(false)}>
                         Hover over me!
@@ -28,7 +28,7 @@ const Header = () => {
                             <div>
                                         I'll appear when you hover over the button.
                             </div> 
-                    )} */
+                    )}
           {/* Test to see if bootstrap "rounded image" works. It does not. ????
           WANNA TEST AGAIN?! Un-comment import image above!
           <Image src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" rounded /> */}
