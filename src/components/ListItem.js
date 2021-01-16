@@ -42,15 +42,15 @@ const ListItem = ({ item }) => {
     //     color: 'black',
     // }
     // // ToDo: find a way to not repeat your code
-    // const flipCardBack = {
-    //     position: 'absolute',
-    //     width: '100%',
-    //     height: '100%',
-    //     backfaceVisibility: 'hidden',
-    //     backgroundColor: 'dodgerblue',
-    //     color: 'white',
-    //     transform: 'totateY(180deg)',
-    // }
+    const flipCardBack = {
+        // position: 'absolute',
+        // width: '100%',
+        // height: '100%',
+        // backfaceVisibility: 'hidden',
+        backgroundColor: 'dodgerblue',
+        color: 'white',
+        // transform: 'totateY(180deg)',
+    }
 
     return (
         <div key={item._id} >
@@ -72,8 +72,7 @@ const ListItem = ({ item }) => {
                     <Image src={item.image} alt={item.name} rounded stype='width:300px;height:300px'/>
                 </div>
                 
-                <div>
-                    {/* style={flipCardBack} */}
+                <div style={flipCardBack}>
                     <h1>Title back</h1>
                     <p>Text text text</p>
                 </div>
