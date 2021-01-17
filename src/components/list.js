@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react'
 import ListItem from './ListItem'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+// , Row, Col
 
 //create List
 const List = () => {

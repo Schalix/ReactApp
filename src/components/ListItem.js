@@ -1,6 +1,8 @@
 // import React from 'react'
-import React, { useState } from 'react';
-import { Image, Col } from 'react-bootstrap';
+import React from 'react';
+//add after "React" if you use it again in the document: , { useState }
+import { Image } from 'react-bootstrap';
+//add after "Image" inside brackets if you use it again:  ", Col"
 
 const ListItem = ({ item }) => {
 
