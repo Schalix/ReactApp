@@ -75,8 +75,9 @@ const ListItem = ({ item }) => {
                 </div>
                 
                 <div style={flipCardBack}>
-                    <h1>Title back</h1>
-                    <p>Text text text</p>
+                    <h1>{item.name}</h1>
+                    <p>species: {item.species}</p>
+                    <p>dead or alive: {item.status}</p>
                 </div>
             </div>
         </div>
